@@ -29,7 +29,16 @@
     <div>
         {% block content %}
         <h1 class="listHeading">Comatose Munch</h1>
-        {% block content %}{% endblock %}
+        <div class="firstList-grid">
+            {% for pizzas, details in pizzas.items() %}
+                <div class="fL-g-item">
+                    <div class="image-frame">
+                        <img src="{{ details['path']}}">
+                    </div>
+                    <a id="text" href="">{{ pizzas }} - $ {{ details['price'] }}</a><br>
+                </div>  
+            {% endfor %}        
+        </div>
         <h1 class="listHeading">Night Expanse</h1>
         {% endblock %}
     </div>
