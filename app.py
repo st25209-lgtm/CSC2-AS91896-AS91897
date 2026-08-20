@@ -12,7 +12,8 @@ def load_pizza_data():
 
 @app.route('/')
 def index():
-    return render_template("index.html")
+    pizzas1 = load_pizza_data()
+    return render_template("base.html", pizzas1=pizzas1)
 
 if __name__ == '__main__':
     app.run(debug=True)
