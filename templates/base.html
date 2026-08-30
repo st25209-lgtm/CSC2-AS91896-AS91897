@@ -14,6 +14,14 @@
     <title>{% block title %} Dream Pizzas {% endblock %}</title>
 </head>
 <body>
+    <div class="nav-bar">
+        {% for links, details in links.items() %}
+        <div>
+            <a href="{{ details['link'] }}">{{ details['name'] }}</a>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="current-UI">
     <div class="titleHeading">
         <h1 id="titleHeading">Dream Pizzas</h1>
     </div>
@@ -21,6 +29,7 @@
         <button class="button"><a href="{{ url_for('home') }}">Home</a></button>
         <button class="button"><a href="{{ url_for('about') }}">About Us</a></button>
         <button class="button"><a href="{{ url_for('menu') }}">Order</a></button>
+    </div>
     </div>
         {% block content %}
         <div class="board-grid">
