@@ -28,12 +28,20 @@
     </div>
     <div>
         {% block content %}
-        <h1 class="listHeading">Comatose Munch</h1>
-        <div class="firstList-grid">
-            {% for pizzas, details in pizzas.items() %}
-                <div class="fL-g-item">
-                    <div class="image-frame">
-                        <img src="{{ details['path']}}">
+            <div class="card-section">
+                <div class="card-item card-item1">
+                    <p class="card-symbol">&#9728;</p>
+                    <!--Sun-->
+                </div>
+                <div class="card-item card-item2">
+                    <p class="card-symbol">&#9729;</p>
+                    <!--Cloud-->
+                </div>
+                <div class="card-item card-item3">
+                    <p class="card-symbol">&#9730;</p>
+                    <!--Umbrella-->
+                </div>
+            </div>
                     </div>
                     <a id="text" href="">{{ pizzas }} - $ {{ details['price'] }}</a><br>
                 </div>  
