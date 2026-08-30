@@ -23,5 +23,10 @@ def home():
 def about():
     return render_template("about.html")
 
+@app.route('/menu')
+def menu():
+    pizzas1 = load_pizza_data()
+    return render_template("menu.html", pizzas1=pizzas1)
+
 if __name__ == '__main__':
     app.run(debug=True)
