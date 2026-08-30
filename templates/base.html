@@ -21,7 +21,6 @@
         <button class="button"><a href="{{ url_for('home') }}">Home</a></button>
         <button class="button"><a href="{{ url_for('menu') }}">Order</a></button>
     </div>
-    <div>
         {% block content %}
         <div class="board-grid">
             <div class="card-section">
@@ -40,16 +39,13 @@
             </div>
             <div class="section-description">
                 <p style="color: white;">Many options, so gooddddddd</p>
-                    </div>
-                </div>  
-            {% endfor %}        
+            </div>
         </div>
-        <h1 class="listHeading">Night Expanse</h1>
         {% endblock %}
         <div class="end">
             <span style="color: white;">
                 Made by Dream Pizzas, 2026
             </span>
-    </div>
+        </div>
 </body>
 </html>

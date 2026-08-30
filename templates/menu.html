@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %} Menu {% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+    <h1 class="listHeading">Comatose Munch</h1>
+        <div class="firstList-grid">
+            {% for pizzas1, details in pizzas1.items() %}
+                <div class="fL-g-item">
+                    <div class="image-frame">
+                        <img src="{{ details['path']}}">
+                    </div>
+                    <a id="text" href="">{{ pizzas1 }} - $ {{ details['price'] }}</a><br>
+                </div>  
+            {% endfor %}        
+        </div>
+    <h1 class="listHeading">Night Expanse</h1>
+</html>
+{% endblock %}
