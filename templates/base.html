@@ -19,13 +19,7 @@
     </div>
     <div class="options">
         <button class="button"><a href="{{ url_for('home') }}">Home</a></button>
-        <button class="button"><a>About Us</a></button>
-        <button class="button"><a>Menu</a></button>
-    </div>
-    <div class="bigText">
-        <div id="tinytext1">
-            <p>˚˖𓍢ִ໋❀ The Pizza of Your Dreams ☆*⁀‧₊˚</p>
-        </div>
+        <button class="button"><a href="{{ url_for('menu') }}">Order</a></button>
     </div>
     <div>
         {% block content %}
