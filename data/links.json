@@ -1,0 +1,5 @@
+{
+    "firstpath": {"name": "Home", "link": "home"},
+    "secondpath": {"name": "About Us", "link": "about"},
+    "thirdpath": {"name": "Order", "link": "menu"}
+}
