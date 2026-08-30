@@ -1,0 +1,7 @@
+{
+    "Pepperoni Slumber": {"price": 8.5, "stock": 21, "path": "static/images/pizza1.png"},
+    "Vegetable Night": {"price": 8.5, "stock": 24, "path": "static/images/pizza2.png"},
+    "Garlic Drowse": {"price": 8.5, "stock": 16, "path": "static/images/pizza3.png"},
+    "Chicken Parm Snooze": {"price": 8.5, "stock": 16, "path": "static/images/pizza4.png"},
+    "Chili Panic-Sleep": {"price": 8.5, "stock": 16, "path": "static/images/pizza5.png"}
+}
