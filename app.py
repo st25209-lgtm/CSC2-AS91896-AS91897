@@ -18,20 +18,24 @@ def load_links():
 @app.route('/')
 def index():
     pizzas1 = load_pizza_data()
-    return render_template("base.html", pizzas1=pizzas1)
+    links = load_links()
+    return render_template("base.html", pizzas1=pizzas1, links=links)
 
 @app.route('/home')
 def home():
-    return render_template("sample.html")
+    links = load_links()
+    return render_template("sample.html", links=links)
 
 @app.route('/about')
 def about():
-    return render_template("about.html")
+    links = load_links()
+    return render_template("about.html", links=links)
 
 @app.route('/menu')
 def menu():
     pizzas1 = load_pizza_data()
-    return render_template("menu.html", pizzas1=pizzas1)
+    links = load_links()
+    return render_template("menu.html", pizzas1=pizzas1, links=links)
 
 if __name__ == '__main__':
     app.run(debug=True)
