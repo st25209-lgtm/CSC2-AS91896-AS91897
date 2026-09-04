@@ -10,6 +10,11 @@ def load_pizza_data():
         pizzas1 = json.load(file)
         return pizzas1
 
+def load_links():
+    with open('data/links.json') as file:
+        links = json.load(file)
+        return links
+
 @app.route('/')
 def index():
     pizzas1 = load_pizza_data()
