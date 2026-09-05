@@ -8,3 +8,10 @@ html {
 body {
     margin: 0;
 }
+
+.nav-bar-container {
+    width: 100vw;
+    background: rgb(24, 30, 58);
+    position: sticky;
+    top: 0;
+}
