@@ -25,6 +25,10 @@ body {
     background-clip: text;
     text-align: center;
 }
+
+
+p {
+    margin: 0;
 }
 
 .nav-bar-container {
