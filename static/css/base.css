@@ -9,6 +9,11 @@ body {
     margin: 0;
 }
 
+.content-area {
+    width: 100vw;
+    height: fit-content;
+}
+
 .nav-bar-container {
     width: 100vw;
     background: rgb(24, 30, 58);
