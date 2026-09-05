@@ -40,6 +40,15 @@ body {
     background-clip: text;
 }
 
+.concept-block2 {
+    height: fit-content;
+    min-height: 400px;
+    max-height: 550px;
+    background: linear-gradient(180deg,#727db3, rgb(24, 30, 58));
+}
+
+
+
 
 p {
     margin: 0;
