@@ -23,12 +23,7 @@
             {% endfor %}
         </div>
     </div>
-    <div class="options">
-        <button class="button"><a href="{{ url_for('home') }}">Home</a></button>
-        <button class="button"><a href="{{ url_for('about') }}">About Us</a></button>
-        <button class="button"><a href="{{ url_for('menu') }}">Order</a></button>
-    </div>
-    </div>
+    <div class="content-area">
         {% block content %}
         <div class="board-grid">
             <div class="card-section">
@@ -50,6 +45,7 @@
             </div>
         </div>
         {% endblock %}
+    </div>>
         <div class="end">
             <span style="color: white;">
                 Made by Dream Pizzas, 2026
