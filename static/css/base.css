@@ -11,7 +11,20 @@ body {
 
 .content-area {
     width: 100vw;
+.concept-block {
     height: fit-content;
+    min-height: 400px;
+    max-height: 500px;
+    background: linear-gradient(rgb(24, 30, 58),#727db3);
+}
+
+.icon {
+    font-size: 30vw;
+    background-image: linear-gradient(20deg, rgb(24, 30, 58), #364381);
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+}
 }
 
 .nav-bar-container {
