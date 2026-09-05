@@ -29,3 +29,13 @@ body {
     grid-template-rows: fit-content;
     text-align: center;
 }
+
+.nav-bar a {
+    color: white;
+    font-family: 'Cherry Bomb One', Arial, sans-serif, serif;
+}
+
+h1 { 
+    color: white;
+}
+
