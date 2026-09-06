@@ -3,3 +3,11 @@
     height: 400px;
     max-height: 400px;
 }
+
+.aub-first {
+    background: linear-gradient(rgb(24, 30, 58), #727db3);
+}
+
+.aub-second {
+    background: linear-gradient(to top, rgb(24, 30, 58), #727db3);
+}
