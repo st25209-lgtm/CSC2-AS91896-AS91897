@@ -31,6 +31,14 @@
             <p class="quote">Dreaming of a Pizza?</p>
         </div>
         <div class="concept-block2">
+            <!--returning cards concept-->
+            <div class="cards-section">
+                {% for previews, details in previews.items() %}
+                <div class="cards-item">
+                    <p> {{ previews }} - {{ details['text'] }}</p>
+                </div>
+                {% endfor %}
+            </div>
         </div>
         {% endblock %}
     </div>>
