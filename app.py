@@ -19,7 +19,8 @@ def load_links():
 def index():
     pizzas1 = load_pizza_data()
     links = load_links()
-    return render_template("base.html", pizzas1=pizzas1, links=links)
+    previews = load_preview()
+    return render_template("base.html", pizzas1=pizzas1, links=links, previews=previews)
 
 @app.route('/home')
 def home():
