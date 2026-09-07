@@ -15,3 +15,10 @@
 .aub-third {
     background: linear-gradient(rgb(24, 30, 58), #727db3);
 }
+
+@media screen and (max-width: 700px) {
+    .about-us-block {
+        height: 500px;
+        max-height: 500px;
+    }
+ }
