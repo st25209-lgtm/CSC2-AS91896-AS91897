@@ -11,3 +11,7 @@
 .aub-second {
     background: linear-gradient(to top, rgb(24, 30, 58), #727db3);
 }
+
+.aub-third {
+    background: linear-gradient(rgb(24, 30, 58), #727db3);
+}
