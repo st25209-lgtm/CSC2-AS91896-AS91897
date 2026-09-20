@@ -37,7 +37,8 @@
             <div class="cards-section">
                 {% for previews, details in previews.items() %}
                 <div class="cards-item">
-                    <p> {{ previews }} - {{ details['text'] }}</p>
+                    <p class="deal-title"> {{ previews }}</p>
+                    <p class="deal-description"> {{ details['text'] }}</p>
                 </div>
                 {% endfor %}
             </div>
