@@ -57,6 +57,7 @@ h1 {
     background-image: linear-gradient(0deg, #2A3465, rgb(24, 30, 58), #2a34651b);
     color: transparent;
     background-clip: text;
+    margin: 0;
 }
 
 .concept-block2 {
