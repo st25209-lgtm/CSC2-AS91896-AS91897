@@ -24,4 +24,8 @@
     color: white;
     font-family: 'Dynapuff', Arial, sans-serif, serif;
 }
+
+.aub-heading, .aub-description {
+    padding: 0px 0px 0px 20px;
+}
 /* background: linear-gradient(rgb(24, 30, 58), #727db3) */
