@@ -87,6 +87,12 @@ h1 {
     font-size: 8vw;
 }
 
+.c2-footer {
+    margin: 20px 0px 10px 0px;
+    color: white;
+}
+
+
 @media screen and (max-width: 500px) {
     .quote {
         font-size: 10vw;
