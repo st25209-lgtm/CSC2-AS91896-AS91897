@@ -28,4 +28,13 @@
 .aub-heading, .aub-description {
     padding: 0px 0px 0px 20px;
 }
+
+.aub-quote {
+    width: fit-content;
+    background: linear-gradient(to top,rgb(24, 30, 58),#727db3);
+    margin: 0px 0px 0px 20px;
+    padding: 20px 10px 20px 10px;
+    border-radius: 5px;
+}
+
 /* background: linear-gradient(rgb(24, 30, 58), #727db3) */
