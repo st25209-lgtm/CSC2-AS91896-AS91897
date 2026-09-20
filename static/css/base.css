@@ -66,6 +66,10 @@ h1 {
     grid-template-rows: 500px;
 }
 
+.cards-item, .c2-heading, .c2-footer {
+    font-family: 'Cherry Bomb One', Arial, sans-serif, serif;
+}
+
 @media screen and (max-width: 500px) {
     .quote {
         font-size: 10vw;
