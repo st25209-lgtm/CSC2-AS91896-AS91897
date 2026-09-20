@@ -92,6 +92,32 @@ h1 {
     color: white;
 }
 
+@media screen and (max-width: 864px) {
+    .cards-section {
+        grid-template-columns: repeat(4, calc(120%/3));
+        grid-template-rows: 320px;
+        gap: 20px;
+        margin: 30px 0px 30px 0px;
+
+    }
+    .cards-item {
+        margin: 0%;
+        width: 100%;
+    }
+    .cards-item p {
+        padding: 0px 5px 0px 5px;
+        font-size: 3.5vw;
+    }
+    .deal-title, .deal-description {
+        margin: 20% 0% 0% 0%;
+    }
+    .c2-heading {
+        font-size: 7vw;
+    }
+    .c2-footer {
+        margin: 0px 0px 0px 10px;
+    }
+}
 
 @media screen and (max-width: 500px) {
     .cards-section {
