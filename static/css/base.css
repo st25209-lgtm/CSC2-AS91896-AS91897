@@ -130,3 +130,8 @@ h1 {
 
 
 /* Media Queries */
+@media screen and (max-width: 544px) {
+    .quote {
+        font-size: 12vw;
+    }
+}
