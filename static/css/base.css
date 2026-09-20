@@ -69,6 +69,13 @@ h1 {
 .cards-item, .c2-heading, .c2-footer {
     font-family: 'Cherry Bomb One', Arial, sans-serif, serif;
 }
+.c2-heading {
+    margin: 0px 0px 0px 10px;
+    background: linear-gradient(180deg, #2A3465, rgb(24, 30, 58), #2a34651b);
+    background-clip: text;
+    color: transparent;
+    font-size: 8vw;
+}
 
 @media screen and (max-width: 500px) {
     .quote {
