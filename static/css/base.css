@@ -69,6 +69,16 @@ h1 {
 .cards-item, .c2-heading, .c2-footer {
     font-family: 'Cherry Bomb One', Arial, sans-serif, serif;
 }
+
+.cards-item {
+    margin: 0% 0% 0% 15%;
+    width: 70%;
+    background: linear-gradient(to bottom,rgb(24, 30, 58),#727db3);
+    text-align: center;
+    border-radius: 30px;
+    color: white;
+}
+
 .c2-heading {
     margin: 0px 0px 0px 10px;
     background: linear-gradient(180deg, #2A3465, rgb(24, 30, 58), #2a34651b);
