@@ -60,13 +60,11 @@ h1 {
     margin: 0;
 }
 
-.concept-block2 {
-    height: fit-content;
-    min-height: 400px;
-    max-height: 550px;
-    background: linear-gradient(to top,rgb(24, 30, 58),#727db3);
+.cards-section {
+    display: grid;
+    grid-template-columns: repeat(3, calc(100%/3));
+    grid-template-rows: 500px;
 }
-
 
 @media screen and (max-width: 500px) {
     .quote {
