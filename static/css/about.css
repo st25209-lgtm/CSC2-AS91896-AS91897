@@ -18,4 +18,10 @@
 .aub-description-block {
     max-width: 700px;
 }
+
+
+.aub-heading, .aub-quote, .aub-description {
+    color: white;
+    font-family: 'Dynapuff', Arial, sans-serif, serif;
+}
 /* background: linear-gradient(rgb(24, 30, 58), #727db3) */
