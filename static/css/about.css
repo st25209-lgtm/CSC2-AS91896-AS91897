@@ -14,6 +14,7 @@
 .aub-heading, .aub-quote, .aub-description {
     color: white;
     font-family: 'Dynapuff', Arial, sans-serif, serif;
+    text-align: center;
 }
 
 .aub-heading, .aub-description {
