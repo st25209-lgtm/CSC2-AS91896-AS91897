@@ -33,4 +33,10 @@
     letter-spacing: 2px;
 }
 
+@media screen and (max-width: 551px) {
+    .aub-description {
+        padding: 0% 12.5% 0% 12.5%;
+    }
+}
+
 /* background: linear-gradient(rgb(24, 30, 58), #727db3) */
