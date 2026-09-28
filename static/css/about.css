@@ -18,10 +18,10 @@
 }
 
 .aub-quote {
-    width: fit-content;
+    text-align: center;
     background: linear-gradient(to top,rgb(24, 30, 58),#727db3);
-    margin: 0px 0px 0px 20px;
-    padding: 20px 10px 20px 10px;
+    margin: 0px 20px 0px 20px;
+    padding: 20px 0px 20px 0px;
     border-radius: 5px;
 }
 
