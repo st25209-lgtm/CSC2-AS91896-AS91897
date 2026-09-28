@@ -34,7 +34,7 @@ def about():
 
 @app.route('/menu')
 def menu():
-    pizzas1 = load_pizza_data()
+    pizzas = load_pizza_data()
     links = load_links()
     return render_template("menu.html", pizzas1=pizzas1, links=links)
 
