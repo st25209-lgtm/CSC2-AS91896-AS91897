@@ -6,9 +6,9 @@ app.secret_key = 'your_secret_key'
 
 
 def load_pizza_data():
-    with open('data/pizzas1.json') as file:
-        pizzas1 = json.load(file)
-        return pizzas1
+    with open('data/pizzas.json') as file:
+        pizzas = json.load(file)
+        return pizzas
 
 def load_links():
     with open('data/links.json') as file:
@@ -17,10 +17,10 @@ def load_links():
 
 @app.route('/')
 def index():
-    pizzas1 = load_pizza_data()
+    pizzas = load_pizza_data()
     links = load_links()
     previews = load_preview()
-    return render_template("base.html", pizzas1=pizzas1, links=links, previews=previews)
+    return render_template("base.html", pizzas=pizzas, links=links, previews=previews)
 
 @app.route('/home')
 def home():
