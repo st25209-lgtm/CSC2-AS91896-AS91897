@@ -41,6 +41,7 @@ def about():
 def menu():
     pizzas = load_pizza_data()
     links = load_links()
+    return render_template("menu.html", pizzas=pizzas, links=links)
 
 @app.route('/order', methods=['POST'])
 def order():
