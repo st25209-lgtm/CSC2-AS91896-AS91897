@@ -15,6 +15,11 @@ def load_links():
         links = json.load(file)
         return links
 
+def load_preview():
+    with open('data/preview.json') as file:
+        previews = json.load(file)
+        return previews
+
 @app.route('/')
 def index():
     pizzas = load_pizza_data()
