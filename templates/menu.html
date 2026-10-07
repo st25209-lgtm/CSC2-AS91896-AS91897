@@ -5,17 +5,40 @@
 {% block content %}
 <!DOCTYPE html>
 <html>
-    <h1 class="listHeading">Evening Munch</h1>
-        <div class="firstList-grid">
-            {% for pizzas1, details in pizzas1.items() %}
-                <div class="fL-g-item">
-                    <div class="image-frame">
-                        <img src="{{ details['path']}}">
-                    </div>
-                    <a id="text" href="">{{ pizzas1 }} - $ {{ details['price'] }}</a><br>
-                </div>  
-            {% endfor %}        
-        </div>
-    <h1 class="listHeading">Night Expanse</h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul classes="flashes">
+            {% for message in messages %}
+            <li>{{ messages }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    {% endwith%}
+    <div class="menu-field">
+        <form action="{{ url_for('order') }}" method="POST">
+            <legend for="pizza">PIZZA</legend>
+            <select name="pizza">
+            {% for pizza, details in pizzas.items() %}
+                <option value="{{ pizza }}">{{ pizza }} - ${{ details['price'] }}</option>
+            {% endfor %}
+            </select>
+            <label for="quantity">Quantity</label>
+            <input type="number" name="quantity" value="1" min="1">
+            <button type="submit">Order</button>
+        </form>
+    </div>
+    <div>
+        {% if cart %}
+        <ul>
+            {% for item, details in cart.items() %}
+            <li>{{ item }}: {{ '%.2f' % details['quantity'] }} x ${{ details['price'] }}
+                = {{ details['quantity'] * details['price'] }}
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p>No items in cart</p>
+        {% endif %}
+    </div>
 </html>
 {% endblock %}
