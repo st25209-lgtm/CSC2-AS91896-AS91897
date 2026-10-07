@@ -41,7 +41,30 @@ def about():
 def menu():
     pizzas = load_pizza_data()
     links = load_links()
-    return render_template("menu.html", pizzas1=pizzas1, links=links)
+
+@app.route('/order', methods=['POST'])
+def order():
+    pizza = request.form['pizza'] # this is going to ask if menu item exists
+    quantity = int(request.form['quantity']) #this will turn the amount into a number
+    pizzas = load_pizza_data() # it loads the data
+    cart = session.get('cart', {}) # it gets the session to update the cart
+
+    if pizza not in pizzas:
+        flash("This item is not on the menu")
+        return redirect(url_for('menu')) # returns to home if the item does not exist
+
+    if pizza in cart:
+        cart[pizza]['quantity'] += quantity # adds the quantity if the item exists
+    else:
+        cart[pizza] = { 
+            'price': pizzas[pizza]['price'],
+            'quantity': quantity
+        }
+
+    session['cart'] = cart
+    session.modified = True
+    flash(f"{quantity} of {pizza} added to your order")
+    return redirect(url_for('menu'))
 
 if __name__ == '__main__':
     app.run(debug=True)
