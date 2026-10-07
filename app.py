@@ -22,6 +22,7 @@ def load_preview():
 
 @app.route('/')
 def index():
+    cart = session.get('cart', {})
     pizzas = load_pizza_data()
     links = load_links()
     previews = load_preview()
