@@ -37,10 +37,10 @@
                 <span>Dreaming Pizzas?</span>
             </div>
         </div>
-        <div class="home-block2">
-            <span class="c2-heading">Deals You Dream Of</span>
-            <!--returning cards concept-->
-            <div class="cards-section">
+        <div class="deals-section">
+            <div class="deals-heading">
+                <span>Deals You Dream Of</span>
+            </div>
                 {% for previews, details in previews.items() %}
                 <div class="cards-item">
                     <p class="deal-title"> {{ previews }}</p>
@@ -48,7 +48,9 @@
                 </div>
                 {% endfor %}
             </div>
-            <span class="c2-footer">Terms and Conditions may apply.</span>
+            <div class="deals-footer">
+                <span>Terms and Conditions Apply.</span>
+            </div>
         </div>
         {% endblock %}
     </div>
