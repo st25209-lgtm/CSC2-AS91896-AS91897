@@ -21,6 +21,7 @@ h1 {
     width: 100vw;
 }
 
+/* Heading Section */
 .base-heading {
     text-align: center;
     background: linear-gradient(195deg, #12162b 20%, #e6e6fa 100%);
@@ -45,6 +46,8 @@ h1 {
     margin: 0px;
 }
 
+
+/* Deals Part */
 .deals-section {
     padding: 30px 20px 30px 20px;
     background: linear-gradient(335deg, #12162b 20%, #e6e6fa 100%)
