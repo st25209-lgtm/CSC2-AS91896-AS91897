@@ -66,12 +66,10 @@ h1 {
     scrollbar-width: none;
 }
 
-.c2-heading {
-    margin: 0px 0px 0px 10px;
-    background: linear-gradient(180deg, #2A3465, rgb(24, 30, 58), #2a34651b);
-    background-clip: text;
-    color: transparent;
-    font-size: 8vw;
+.deals-item {
+    padding: 10px 2px 0px 10px;
+    border-radius: 20px;
+    background-color: black;
 }
 
 .c2-footer {
