@@ -41,10 +41,18 @@
             <div class="deals-heading">
                 <span>Deals You Dream Of</span>
             </div>
+            <div class="deals-grid">
                 {% for previews, details in previews.items() %}
-                <div class="cards-item">
-                    <p class="deal-title"> {{ previews }}</p>
-                    <p class="deal-description"> {{ details['text'] }}</p>
+                <div class="deals-item">
+                    <div class="deals-title">
+                        <span>{{ previews }}</span>
+                    </div>
+                    <div class="deals-description">
+                        <span>{{ details['text'] }}</span>
+                    </div>
+                    <div>
+                        <img src="{{ details['svg'] }}" role="img" style="margin-top: 20px;">
+                    </div>
                 </div>
                 {% endfor %}
             </div>
