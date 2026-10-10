@@ -113,8 +113,9 @@ h1 {
 
 /* end */
 .end {
-    padding: 50px 0px 50px 0px;
-    background-color: #12162B;
+    font-family: 'Sansation', Arial, sans-serif, serif;
+    padding: 50px 0px 50px 20px;
+    background: #12162b;
 }
 
 
