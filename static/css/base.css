@@ -21,17 +21,10 @@ h1 {
     width: 100vw;
 }
 
-.home-block {
-    height: fit-content;
-    min-height: 450px;
-    max-height: 550px;
-    background: linear-gradient(rgb(24, 30, 58),#727db3);
-}
-
-.home-block2 {
-    height: 500px;
-    max-height: 500px;
-    background: linear-gradient(to top,rgb(24, 30, 58),#727db3);
+.base-heading {
+    text-align: center;
+    background: linear-gradient(195deg, #12162b 20%, #e6e6fa 100%);
+    padding: 30px 0px 30px 0px;
 }
 
 .icon {
@@ -54,7 +47,10 @@ h1 {
     margin: 0;
 }
 
-.cards-section {
+.deals-section {
+    padding: 30px 20px 30px 20px;
+    background: linear-gradient(335deg, #12162b 20%, #e6e6fa 100%)
+}
     display: grid;
     grid-template-columns: repeat(3, calc(100%/3));
     grid-template-rows: 500px;
