@@ -2,5 +2,5 @@
     "Nightfall": { "text": "Buy 2, Get 1 50% off", "svg": "static/images/stars.svg"},
     "Midnight": { "text": "Student? Free drink upgrade, on us.", "svg": "static/images/crescents.svg"},
     "Evernight": { "text": "Paying $30 or more? Upgrade an item for free.", "svg": "static/images/ghosts.svg"},
-    "Dreams": { "text": "..."}
+    "Dreams": { "text": "Wanna upgrade a drink? Just a dollar on Friday.", "svg": "static/images/zzz.svg"}
 }
