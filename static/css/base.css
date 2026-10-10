@@ -28,12 +28,10 @@ h1 {
 }
 
 .icon {
-    padding: 25px 0px 0px 0px;
-    font-size: 180px;
-    background-image: linear-gradient(270deg, #2A3465, black);
+    background: linear-gradient(302deg, #12162b 51%, #e6e6fa 92%);
     color: transparent;
     background-clip: text;
-    text-align: center;
+    font-size: 200px;
     margin: 0;
 }
 
