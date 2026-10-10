@@ -49,22 +49,15 @@ h1 {
     padding: 30px 20px 30px 20px;
     background: linear-gradient(335deg, #12162b 20%, #e6e6fa 100%)
 }
+
+.deals-grid {
     display: grid;
-    grid-template-columns: repeat(3, calc(100%/3));
-    grid-template-rows: 500px;
-}
-
-.cards-item, .c2-heading, .c2-footer {
-    font-family: 'Cherry Bomb One', Arial, sans-serif, serif;
-}
-
-.cards-item {
-    margin: 0% 0% 0% 15%;
-    width: 70%;
-    background: linear-gradient(to bottom,rgb(24, 30, 58),#727db3);
-    text-align: center;
-    border-radius: 30px;
-    color: white;
+    gap: 20px;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(1, 400px);
+    margin: 10px 0px 10px 0px;
+    overflow: scroll;
+    scrollbar-width: none;
 }
 
 .c2-heading {
