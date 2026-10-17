@@ -17,6 +17,10 @@
 
 
 .aub-quote {
+    color: lavender;
+    font-style: italic;
+}
+
 .card-grid {
     display: grid;
     margin: 10px 0px 10px 0px;
