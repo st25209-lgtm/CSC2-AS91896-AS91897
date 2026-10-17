@@ -32,6 +32,7 @@
 }
 
 .card-item {
+    font-family: 'Dynapuff', Arial, sans-serif, serif;
     background-color: black;
     border-radius: 20px;
     color: white;
