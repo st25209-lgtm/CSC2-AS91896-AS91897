@@ -6,6 +6,10 @@
     overflow: hidden;
 }
 
+.aub-third {
+    height: fit-content;
+}
+
 /* abbreviated about-us-block to aub for better readability */
 
 
