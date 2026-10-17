@@ -2,6 +2,7 @@
 .about-us-block {
     width: 100vw;
     height: fit-content;
+    padding: 20px 0px 20px 10px;
 }
 
 /* abbreviated about-us-block to aub for better readability */
