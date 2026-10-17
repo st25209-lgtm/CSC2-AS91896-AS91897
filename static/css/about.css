@@ -3,6 +3,7 @@
     width: 100vw;
     height: 500px;
     padding: 20px 0px 20px 0px;
+    overflow: hidden;
 }
 
 /* abbreviated about-us-block to aub for better readability */
@@ -11,6 +12,7 @@
 .aub-heading, .aub-quote, .aub-description {
     color: white;
     font-family: 'Dynapuff', Arial, sans-serif, serif;
+    padding: 0px 0px 0px 20px;
 }
 
 
