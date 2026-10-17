@@ -15,6 +15,10 @@
 
 
 .aub-quote {
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 400px;
     text-align: center;
     background: linear-gradient(to top,rgb(24, 30, 58),#727db3);
     margin: 0px 20px 0px 20px;
