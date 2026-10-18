@@ -26,7 +26,7 @@ def index():
     pizzas = load_pizza_data()
     links = load_links()
     previews = load_preview()
-    return render_template("base.html", pizzas=pizzas, links=links, previews=previews)
+    return render_template("base.html", pizzas=pizzas, links=links, previews=previews, cart=cart)
 
 @app.route('/home')
 def home():
