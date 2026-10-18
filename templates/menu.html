@@ -13,32 +13,7 @@
             {% endfor %}
         </ul>
         {% endif %}
-    {% endwith%}
-    <div class="menu-field">
-        <form action="{{ url_for('order') }}" method="POST">
-            <legend for="pizza">PIZZA</legend>
-            <select name="pizza">
-            {% for pizza, details in pizzas.items() %}
-                <option value="{{ pizza }}">{{ pizza }} - ${{ details['price'] }}</option>
-            {% endfor %}
-            </select>
-            <label for="quantity">Quantity</label>
-            <input type="number" name="quantity" value="1" min="1">
-            <button type="submit">Order</button>
-        </form>
-    </div>
-    <div>
-        {% if cart %}
-        <ul>
-            {% for item, details in cart.items() %}
-            <li>{{ item }}: {{ '%.2f' % details['quantity'] }} x ${{ details['price'] }}
-                = {{ details['quantity'] * details['price'] }}
-            </li>
-            {% endfor %}
-        </ul>
-        {% else %}
-        <p>No items in cart</p>
-        {% endif %}
+    <div class="menu-page-content">
     </div>
 </html>
 {% endblock %}
