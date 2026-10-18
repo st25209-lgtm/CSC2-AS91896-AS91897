@@ -24,6 +24,14 @@
                     <div class="item-title">
                         {{ pizza }} 
                     </div>
+                    <form action="{{ url_for('order') }}" method="POST">
+                        <select name="pizza" style="display: none">
+                            <option value="{{ pizza }}">{{ pizza }}</option>
+                        </select>
+                        <span style="font-family: 'Sansation', Arial, sans-serif, serif;">Amount:</span>
+                        <input type="number" name="quantity" value="1" min="1">
+                        <button type="submit">ORDER</button>
+                    </form>
                 </div>
                 {% endfor %}
             </ul>
