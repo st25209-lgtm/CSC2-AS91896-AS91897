@@ -68,5 +68,19 @@ def order():
     flash(f"{quantity} of {pizza} added to your order")
     return redirect(url_for('menu'))
 
+@app.route('/remove_from_cart/<item>')
+def remove_from_cart(item):
+    cart = session.get('cart', {})
+
+    if item in cart:
+        del cart[item]
+        session['cart'] = cart
+        session.modified = True
+        flash(f"{item} was removed")
+    else:
+        flash("Item does not exist/is not in the cart.")
+    return redirect(url_for('menu'))
+    
+
 if __name__ == '__main__':
     app.run(debug=True)
