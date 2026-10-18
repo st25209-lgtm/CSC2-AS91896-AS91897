@@ -21,6 +21,9 @@
             <ul class="order-list-grid">
                 {% for pizza, details in pizzas.items() %}
                 <div class="order-item">
+                    <div class="item-title">
+                        {{ pizza }} 
+                    </div>
                 </div>
                 {% endfor %}
             </ul>
