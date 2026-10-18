@@ -39,6 +39,7 @@
         <div class="order-list-area">
             {% if cart %}
                 <ul class="order-list-grid">
+                    {% for item, details in cart.items() %}
                     <li class="order-item">
                     <div class="item-title">
                         {{ item }} 
@@ -48,6 +49,7 @@
 
                     </br><a href="{{ url_for('remove_from_cart', item=item) }}">Remove Item</a>
                     </li>
+                    {% endfor %}
                 </ul>
             {% endif %}
         </div>
