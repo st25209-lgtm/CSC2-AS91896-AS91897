@@ -40,9 +40,10 @@ def about():
 
 @app.route('/menu')
 def menu():
+    cart = session.get('cart', {})
     pizzas = load_pizza_data()
     links = load_links()
-    return render_template("menu.html", pizzas=pizzas, links=links)
+    return render_template("menu.html", pizzas=pizzas, links=links, cart=cart)
 
 @app.route('/order', methods=['POST'])
 def order():
