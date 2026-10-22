@@ -25,6 +25,9 @@
                     <div class="item-title">
                         {{ pizza }} 
                     </div>
+                    <div class="item-image">
+                        <img src="{{ details['path'] }}" id="item-image">
+                    </div>
                     <form action="{{ url_for('order') }}" method="POST">
                         <select name="pizza" style="display: none">
                             <option value="{{ pizza }}">{{ pizza }}</option>
