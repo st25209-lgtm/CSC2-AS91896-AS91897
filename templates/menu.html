@@ -38,6 +38,9 @@
             </ul>
         </div>
         <div class="order-list-area">
+            <div class="order-list-heading">
+                <h1>Cart</h1>
+            </div>
             {% if cart %}
                 <ul class="order-list-grid">
                     {% for item, details in cart.items() %}
