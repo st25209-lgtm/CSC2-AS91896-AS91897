@@ -45,7 +45,7 @@
                 <h1>Cart</h1>
             </div>
             {% if cart %}
-                <ul class="order-list-grid">
+                <div class="order-list-grid">
                     {% for item, details in cart.items() %}
                         <div class="item-title">
                             {{ item }} 
@@ -55,7 +55,7 @@
                         = ${{ details['quantity'] * details['price'] }}
                     </div>
                         <a href="{{ url_for('remove_from_cart', item=item) }}" class="remove-button">Remove Item</a>
-                    </li>
+                 </div>
                     {% endfor %}
                 </div>
                 <div>
