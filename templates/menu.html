@@ -54,7 +54,7 @@
                         {{ '%.2f' % details['quantity'] }} x ${{ details['price'] }}
                         = ${{ details['quantity'] * details['price'] }}
                     </div>
-                    </br><a href="{{ url_for('remove_from_cart', item=item) }}">Remove Item</a>
+                        <a href="{{ url_for('remove_from_cart', item=item) }}" class="remove-button">Remove Item</a>
                     </li>
                     {% endfor %}
                 </div>
