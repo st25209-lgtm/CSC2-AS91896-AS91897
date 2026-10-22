@@ -62,7 +62,7 @@
                 <div>
                     <form method="POST">
                         <label for="customer_name_checkout">Your Name:</label>
-                        <input type="text" name="customer_name" id="customer_name_checkout" required>
+                        <input type="text" name="customer_name" id="name_input" required>
                         <button type="submit" formaction="{{ url_for('checkout') }}" class="checkout-button">Checkout</button>
                         <button type="submit" formaction="{{ url_for('cancel') }}" class="cancel-button">Cancel Order</button>
                     </form>
