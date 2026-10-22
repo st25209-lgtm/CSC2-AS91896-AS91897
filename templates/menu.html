@@ -57,7 +57,10 @@
                     </br><a href="{{ url_for('remove_from_cart', item=item) }}">Remove Item</a>
                     </li>
                     {% endfor %}
-                </ul>
+                </div>
+                <div>
+                    <form method="POST">
+                    </form>
             {% else %}
             <p>No items in cart</p>
             {% endif %}
