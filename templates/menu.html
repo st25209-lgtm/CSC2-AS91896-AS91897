@@ -47,13 +47,10 @@
             {% if cart %}
                 <ul class="order-list-grid">
                     {% for item, details in cart.items() %}
-                    <li class="order-item">
-                    <div class="item-title">
-                        {{ item }} 
-                    </div>
-                    </br>{{ '%.2f' % details['quantity'] }} x ${{ details['price'] }}
+                    <div class="item-amount">
+                        {{ '%.2f' % details['quantity'] }} x ${{ details['price'] }}
                         = ${{ details['quantity'] * details['price'] }}
-
+                    </div>
                     </br><a href="{{ url_for('remove_from_cart', item=item) }}">Remove Item</a>
                     </li>
                     {% endfor %}
