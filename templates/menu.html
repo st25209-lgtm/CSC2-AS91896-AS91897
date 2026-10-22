@@ -47,6 +47,7 @@
             {% if cart %}
                 <div class="order-list-grid">
                     {% for item, details in cart.items() %}
+                    <div class="order-item">
                             <div class="item-title">
                                 {{ item }} 
                             </div>
