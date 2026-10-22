@@ -47,9 +47,9 @@
             {% if cart %}
                 <div class="order-list-grid">
                     {% for item, details in cart.items() %}
-                        <div class="item-title">
-                            {{ item }} 
-                        </div>
+                            <div class="item-title">
+                                {{ item }} 
+                            </div>
                     <div class="item-amount">
                         {{ '%.2f' % details['quantity'] }} x ${{ details['price'] }}
                         = ${{ details['quantity'] * details['price'] }}
