@@ -32,8 +32,7 @@ def index():
 
 @app.route('/home')
 def home():
-    links = load_links()
-    return render_template("sample.html", links=links)
+    return redirect(url_for('index'))
 
 @app.route('/about')
 def about():
