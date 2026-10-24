@@ -91,6 +91,25 @@ def cancel():
     flash(f"Cart Items have been removed")
     return redirect(url_for('menu'))
 
+@app.route('/checkout', methods=['POST'])
+def checkout():
+    links = load_links()
+    customer_name = request.form['customer_name'].strip().title()
+
+    if not customer_name:
+        flash("Requires a Customer Name")
+        return redirect(url_for('home'))
+
+    cart = session.get('cart', {})
+
+    if not cart:
+        flash("Empty Cart: Please add item(s)!")
+        return redirect(url_for('home'))
+
+    invoice_date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    invoice_number = f"INV_{customer_name.replace('', '_')}_{invoice_date}"
+
+    return render_template('invoice.html', cart=cart, customer_name=customer_name, invoice_number=invoice_number, invoice_date=invoice_date, links=links)
 
 if __name__ == '__main__':
     app.run(debug=True)
