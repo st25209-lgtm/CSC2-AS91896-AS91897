@@ -116,7 +116,9 @@ def checkout():
     invoice_date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     invoice_number = f"INV_{customer_name.replace('', '_')}_{invoice_date}"
 
-    return render_template('invoice.html', cart=cart, customer_name=customer_name, invoice_number=invoice_number, invoice_date=invoice_date, links=links)
+    total = calculate_total(cart)
+
+    return render_template('invoice.html', cart=cart, customer_name=customer_name, invoice_number=invoice_number, invoice_date=invoice_date, links=links, total=total)
 
 if __name__ == '__main__':
     app.run(debug=True)
