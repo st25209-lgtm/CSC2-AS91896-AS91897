@@ -82,7 +82,15 @@ def remove_from_cart(item):
     else:
         flash("Item does not exist/is not in the cart.")
     return redirect(url_for('menu'))
-    
+
+@app.route('/cancel', methods=['POST'])
+def cancel():
+    session.pop('cart', None)
+    session.modified = True
+
+    flash(f"Cart Items have been removed")
+    return redirect(url_for('menu'))
+
 
 if __name__ == '__main__':
     app.run(debug=True)
