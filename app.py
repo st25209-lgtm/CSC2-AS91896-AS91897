@@ -91,6 +91,13 @@ def cancel():
     flash(f"Cart Items have been removed")
     return redirect(url_for('menu'))
 
+
+def calculate_total(cart):
+    cart = session.get('cart', {})
+    total = sum(item['price'] * item['quantity'] for item in cart.values())
+    return total
+
+
 @app.route('/checkout', methods=['POST'])
 def checkout():
     links = load_links()
