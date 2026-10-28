@@ -21,3 +21,4 @@ html { color: white; }
 
 #order-button { margin: 5px 0px 0px 0px; padding: 5px 20px 5px 20px; }
 
+label, #name_input { font-family: 'Sansation', Arial, sans-serif, serif; color: white; }
