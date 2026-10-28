@@ -31,3 +31,6 @@ label, #name_input { font-family: 'Sansation', Arial, sans-serif, serif; color: 
 }
 
 .cancel-button:hover { background-color: red; transition: all 0.5s; }
+
+.checkout-button { background-color: none; }
+
