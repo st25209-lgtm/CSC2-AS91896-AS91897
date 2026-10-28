@@ -34,3 +34,4 @@ label, #name_input { font-family: 'Sansation', Arial, sans-serif, serif; color: 
 
 .checkout-button { background-color: none; }
 
+.checkout-button:hover { background-color: green; transition: all 0.5s; }
