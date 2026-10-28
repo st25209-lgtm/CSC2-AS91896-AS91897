@@ -8,3 +8,10 @@ html { color: white; }
 
 .menu-field { margin: 20px 0px 20px 0px; }
 
+#order-input, #order-button, .cancel-button, .checkout-button {
+    font-family: 'Sansation', Arial, sans-serif, serif;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
