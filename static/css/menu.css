@@ -24,3 +24,9 @@ html { color: white; }
 label, #name_input { font-family: 'Sansation', Arial, sans-serif, serif; color: white; }
 #name_input { background: none; border: 1px solid white;}
 
+.cancel-button, .checkout-button, #name_input {
+    font-size: 15px;
+    padding: 5px 15px;
+    margin: 10px 0px 0px 0px;
+}
+
