@@ -35,3 +35,18 @@ label, #name_input { font-family: 'Sansation', Arial, sans-serif, serif; color: 
 .checkout-button { background-color: none; }
 
 .checkout-button:hover { background-color: green; transition: all 0.5s; }
+
+@media screen and (max-height: 1408px) {
+    .item-image {
+        height: 300px;
+        width: 280px;
+        border-radius: 5px;
+        overflow: hidden;
+        margin: 5px 0px 5px 0px;
+    }
+
+    #item-image {
+        height: 100%;
+        width: 100%;
+    }
+}
