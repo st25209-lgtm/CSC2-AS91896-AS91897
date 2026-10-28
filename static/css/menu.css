@@ -15,3 +15,6 @@ html { color: white; }
     color: white;
     cursor: pointer;
 }
+
+
+#order-input { margin: 5px 0px 5px 0px; padding: 5px; }
