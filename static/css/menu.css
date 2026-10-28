@@ -30,3 +30,4 @@ label, #name_input { font-family: 'Sansation', Arial, sans-serif, serif; color: 
     margin: 10px 0px 0px 0px;
 }
 
+.cancel-button:hover { background-color: red; transition: all 0.5s; }
