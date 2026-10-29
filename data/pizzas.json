@@ -1,7 +1,7 @@
 {
-    "Pepperoni Pizza": {"price": 8.5, "stock": 21, "path": "static/images/pizza1.png"},
-    "Vegetarian": {"price": 8.5, "stock": 24, "path": "static/images/pizza2.png"},
-    "Garlic Pizza": {"price": 8.5, "stock": 16, "path": "static/images/pizza3.png"},
-    "Chicken Parmesan": {"price": 8.5, "stock": 16, "path": "static/images/pizza4.png"},
-    "[HOT] Chili Pizza": {"price": 8.5, "stock": 16, "path": "static/images/pizza5.png"}
+    "Pepperoni Pizza": {"price": 8.5, "stock": 21, "path": "https://i.pinimg.com/736x/5c/63/7f/5c637f34ee4ede93143ac367badf818e.jpg"},
+    "Vegetarian": {"price": 8.5, "stock": 24, "path": "https://i.pinimg.com/1200x/b0/af/94/b0af9403302893bd9c611741020330fe.jpg"},
+    "Garlic Pizza": {"price": 8.5, "stock": 16, "path": "https://flavornest.net/wp-content/uploads/2025/04/sudnixshaco_This_garlic_cheese_pizza_is_baked_to_a_golden_cri_db9a48c2-bc88-49bc-940b-b2493168e0ea_0.webp"},
+    "Chicken Parmesan": {"price": 8.5, "stock": 16, "path": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/b5889184e9ce42d4893310a2c3324539/BFV32444_ChickenParmPizza-FB-FINAL.jpg?resize=1200:*"},
+    "[HOT] Chili Pizza": {"price": 8.5, "stock": 16, "path": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTthArdqkKeGrpTd5mhBASOJA7-SqTanqPpP90tAjh7Ow&s=10"}
 }
