@@ -60,3 +60,10 @@ label, #name_input { font-family: 'Sansation', Arial, sans-serif, serif; color: 
     gap: 20px;
     padding: 0;
 }
+
+.order-item {
+    background-color: black;
+    padding: 20px 10px 20px 10px;
+    border-radius: 10px;
+}
+
