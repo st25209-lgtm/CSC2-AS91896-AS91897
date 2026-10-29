@@ -36,3 +36,7 @@
 .c-orders-items {
     border: 1px solid #364381;
 }
+
+.total {
+    font-family: 'Sansation', Arial, sans-serif, serif;
+}
