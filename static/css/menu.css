@@ -68,3 +68,6 @@ label, #name_input { font-family: 'Sansation', Arial, sans-serif, serif; color: 
 }
 
 .item-title, .remove, .item-amount, .remove-button { font-family: 'Sansation', Arial, sans-serif, serif; }
+
+.item-amount { margin: 7px 0px 7px 0px; }
+
