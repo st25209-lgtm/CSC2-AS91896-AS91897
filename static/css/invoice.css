@@ -1,6 +1,13 @@
 .invoice-area {
     padding: 0px 20px 0px 20px;
 }
+
+.c-heading, .invoice-details {
+    margin: 20px 0px 20px 0px;
+    padding: 10px 5px 10px 5px;
+    background-color: #1E2548;
+    border-radius: 5px;
+}
 .orders-tab {
     margin: 20px 0px 20px 0px;
 }
