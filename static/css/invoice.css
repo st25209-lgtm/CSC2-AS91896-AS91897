@@ -22,3 +22,9 @@
     text-align: center;
 }
 
+.c-orders {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    font-family: Arial, sans-serif, serif;
+}
+
