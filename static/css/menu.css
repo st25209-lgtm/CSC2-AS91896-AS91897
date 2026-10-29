@@ -52,3 +52,11 @@ label, #name_input { font-family: 'Sansation', Arial, sans-serif, serif; color: 
 }
 
 /* Where people can see what they ordered; Cart Styling */
+.order-list-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(1, auto);
+    overflow: hidden;
+    gap: 20px;
+    padding: 0;
+}
