@@ -75,3 +75,16 @@ label, #name_input { font-family: 'Sansation', Arial, sans-serif, serif; color: 
     margin: 5px 0px 5px 0px; padding: 5px;
     border: 1px solid white;
 }
+
+.remove { display: inline-block; }
+
+.remove::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background-color: white;
+    transition: 100ms;
+}
+
+.remove:hover::after { width: 100%; }
